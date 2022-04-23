@@ -1,0 +1,22 @@
+body{
+    font-size: 62.5%;
+}
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.searchBar{
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    padding: 0.5rem;
+    width: 40%;
+}
+
+.drinkImage{
+    width: 40%;
+}
