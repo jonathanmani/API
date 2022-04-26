@@ -26,9 +26,14 @@ button {
 }
 
 .drinkImage{
-    width: 50%;
+    width: 40%;
     display: block;
     margin: 2rem auto;
+}
+
+.alcohol-info {
+    display: flex;
+    justify-content: space-between;
 }
 
 h3,
@@ -37,5 +42,8 @@ h3,
     display: block;
     width: 40%;
     margin: 1rem auto;
-    border: 1px solid red;
+}
+
+(text){
+    font-size: 1.5rem;
 }

@@ -9,7 +9,7 @@ function getDrink(){
             console.log(data.drinks)
             document.querySelector('.drinkImage').src = data.drinks[0].strDrinkThumb
             document.querySelector('#instructions').innerText = data.drinks[0].strInstructions
-            document.querySelector('h3').hidden = false;
+            document.querySelector('h3').style.visibility = visible;
         })
         .catch(err =>{
             console.log('error ${err}')
