@@ -7,8 +7,10 @@ h1{
     font-size: 2rem;
 }
 
-h3{
-    visibility: hidden;
+h3 {
+    color: black;
+    font-size: 1.5rem;
+    margin: 0;
 }
 
 .searchBar{
@@ -28,20 +30,7 @@ button {
 .drinkImage{
     width: 30%;
     display: block;
-    margin: 2rem auto;
-}
-
-.alcohol-info {
-    display: flex;
-    justify-content: space-between;
-}
-
-h3,
-#instructions,
-#ingredients {
-    display: block;
-    width: 40%;
-    margin: 1rem auto;
+    margin: 2rem 2rem 0.5rem 2rem;
 }
 
 .drink-div{
@@ -52,4 +41,11 @@ h3,
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.drinkContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
