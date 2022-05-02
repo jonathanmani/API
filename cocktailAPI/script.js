@@ -8,14 +8,15 @@ function getDrink(){
         .then(data => {
             console.log(data.drinks)
             document.querySelector('.drinkImage').src = data.drinks[0].strDrinkThumb
-            document.querySelector('#instructions').innerText = data.drinks[0].strInstructions
-            document.querySelector('h3').style.visibility = visible;
+            //document.querySelector('#instructions').innerText = data.drinks[0].strInstructions
+            
         })
         .catch(err =>{
             console.log('error ${err}')
         })
 
-    document.querySelector('h1').innerText = document.querySelector('input').value;
+    let inputVal = document.querySelector('input').value;
+    document.querySelector('h1').innerText = inputVal.charAt(0).toUpperCase() + inputVal.slice(1);
 
     
 
