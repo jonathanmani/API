@@ -7,7 +7,15 @@ function getDrink(){
         .then(res => res.json())
         .then(data => {
             console.log(data.drinks)
-            document.querySelector('.drinkImage').src = data.drinks[0].strDrinkThumb
+            let drinkDiv = document.querySelector('.drink-div');
+
+            for (let i = 0; i < data.drinks.length; i++){
+                let drinkImage = document.createElement('img');
+                drinkImage.setAttribute('class','drinkImage');
+                drinkImage.src = data.drinks[i].strDrinkThumb;
+                drinkDiv.appendChild(drinkImage);
+            }
+            //document.querySelector('.drinkImage').src = data.drinks[0].strDrinkThumb
             //document.querySelector('#instructions').innerText = data.drinks[0].strInstructions
             
         })
