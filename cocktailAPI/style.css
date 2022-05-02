@@ -45,6 +45,7 @@ h3,
 }
 
 .drink-div{
+    margin: 0 auto;
     width: 80%;
     height: auto;
     display: flex;
