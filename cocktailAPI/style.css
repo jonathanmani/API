@@ -28,7 +28,7 @@ button {
 }
 
 .drinkImage{
-    width: 30%;
+    width: 90%;
     display: block;
     margin: 2rem 2rem 0.5rem 2rem;
 }
@@ -48,4 +48,6 @@ button {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 30%;
+    height: 60%;
 }
