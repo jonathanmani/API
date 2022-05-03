@@ -14,8 +14,10 @@ function getDrink(){
 
             for (let i = 0; i < data.drinks.length; i++){
                 //create a div that holds the drink image and drink text
-                let drinkContainer = document.createElement('div');
+                let drinkContainer = document.createElement('a');
                 drinkContainer.setAttribute('class','drinkContainer');
+                let drinkID = data.drinks[i].idDrink;
+                drinkContainer.setAttribute('href', `/${drinkID}`);
 
                 //create an image element to hold the image
                 let drinkImage = document.createElement('img');
@@ -43,8 +45,6 @@ function getDrink(){
 
     let inputVal = document.querySelector('input').value;
     document.querySelector('h1').innerText = inputVal.charAt(0).toUpperCase() + inputVal.slice(1);
-
-    
 
     
 }
